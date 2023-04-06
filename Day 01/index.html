@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="file.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box1">
+                <span class="heading">Guess a number between 1 to 100</span>
+                <button class="startBtn">Start Game</button>
+            </div>
+            <div class="box2">
+                <form action="">
+                    <input type="number" placeholder="Guess here" class="input">
+                    <button class="checkBtn" type="submit">Check</button>
+                </form>
+                <span class="result"></span>
+                <div class="attempts">
+                    <div class="line">
+                        <div class="prev">Remaining attempts : </div>
+                        <div class="prevData" id="one">-</div>
+                    </div>
+                    <div class="line">
+                        <div class="prev">Previous attempts : </div>
+                        <div class="prevData" id="two"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
