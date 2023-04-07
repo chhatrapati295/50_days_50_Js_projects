@@ -1,34 +1,25 @@
 const heading = document.querySelector('.heading')
-const decreaseBtn = document.querySelector('.de')
-const resetBtn = document.querySelector('.re')
-const increaseBtn = document.querySelector('.in')
-const allBtns = document.querySelectorAll('button')
-let count = 0;
+const startBtn = document.querySelector('.start')
+const stopBtn = document.querySelector('.stop')
 
-allBtns.forEach((btn)=>{
-    btn.addEventListener('click',()=>{
-        if(btn.textContent === 'Increase'){
-            count++;
-            numberingColor()
-            heading.textContent = count
-        }else if(btn.textContent === 'Decrease'){
-            count--;
-            numberingColor()
-            heading.textContent = count
-        }else{
-            count =0;
-            numberingColor()
-            heading.textContent = count
-        }
+
+let hr=0; let min=0; let sec=0;
+startBtn.addEventListener('click',()=>{
+        id1 = setInterval(() => {
+            startBtn.disabled = true;
+            if(sec > 59){
+                min++;
+                sec=0
+            }else if(min >= 59){
+                hr++;
+                min=0
+            }else{
+                sec++;
+            }
+            heading.textContent = `${hr.toString().padStart(2,'0')} : ${min.toString().padStart(2,'0')} : ${sec.toString().padStart(2,'0')}`
+        }, 1000);
     })
-})
-
-function numberingColor (){
-    if(count > 0){
-        heading.style.color = 'green'
-    }else if(count < 0){
-        heading.style.color = 'red'
-    }else{
-        heading.style.color = 'black'
-    }
-}
+    stopBtn.addEventListener('click',()=>{
+        startBtn.disabled =false;
+        clearInterval(id1)
+    })
