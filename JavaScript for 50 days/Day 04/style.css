@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+main{
+    width: 70%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 0.5rem;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+}
+.input , .btn{
+    padding: 0.5rem;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid black;
+}
+.box2{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    background: rgb(244, 213, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+.box2 .para{
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+}
+.copyBtn{
+    padding: 0.2rem 0.5rem;
+    background: lightskyblue;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-left: 0.3rem;
+    font-size: 0.6rem;
+    display: none;
+}
