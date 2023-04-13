@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid black;
+}
+.box{
+    padding: 1rem 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+.line{
+    font-size: 1rem;
+}
+.buttons{
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+}
+.startBtn{
+    align-self: center;
+    margin-top: 1rem;
+}
+.buttons button , .specialBtn{
+    padding: 0.2rem 0.4rem;
+}
+.result{
+    padding: 0.3rem 0.5rem;
+    background: lightblue;
+}
