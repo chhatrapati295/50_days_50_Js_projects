@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.container{
+    margin: auto;
+    margin-top: 2rem;
+    border: 2px solid black;
+    padding: 1rem;
+    width: 90%;
+
+}
+.heading{
+    text-align: center;
+}
+form{
+    text-align: center;
+    margin: 1rem;
+}
+.input , .btn{
+    padding: 0.5rem;
+    outline: none;
+}
+
