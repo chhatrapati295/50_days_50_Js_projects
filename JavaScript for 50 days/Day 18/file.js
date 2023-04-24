@@ -38,5 +38,5 @@ function setData(data){
         info.append(ins)
         a.append(btn)
         info.append(a)
-    })
+    }) 
 }
