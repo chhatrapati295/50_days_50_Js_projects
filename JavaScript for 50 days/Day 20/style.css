@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    align-items: center;
+    font-size: 1rem;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btns button{
+    padding: 0.3rem 0.8rem;
+}
