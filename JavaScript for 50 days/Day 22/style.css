@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 40%;
+    padding: 1rem;
+    border: 2px solid palevioletred;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+input{
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+label{
+    width: 80px;
+}
