@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.container{
+    width: 90%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 1rem;
+    margin: auto;
+}
+.container h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.card{
+    display: flex;
+    gap: 20px;
+    margin: 1rem 0;
+    background: whitesmoke;
+    padding: 1rem;
+}
+.card img{
+    width: 300px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.card .title{
+    font-size: 1.5rem;
+}
+.card .text{
+    font-size: 0.8rem !important;
+    opacity: 0.6;
+}
+.nextBtn{
+    padding: 0.5rem 2rem;
+    outline: none;
+    background: rgb(71, 71, 249);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    align-self: center;
+    display: block;
+    margin: auto;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #000;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: none;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
