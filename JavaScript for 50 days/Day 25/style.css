@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    background: whitesmoke;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+form{
+    text-align: center;
+    margin: 1rem 0;
+}
+input , button[type='submit']{
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.cardList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 300px;
+}
+.card img{
+    height: 200px;
+    object-fit: cover;
+}
+.next{
+    padding: 0.4rem 1rem;
+    background: lightseagreen;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 1rem auto;
+}
+.earlyMsg{
+    /* display: block; */
+    /* margin: auto; */
+    text-align: center;
+    margin: 8rem 0;
+    font-size: 1rem ;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
