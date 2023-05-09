@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Labrada:wght@700&family=Poppins:wght@200;300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="file.js" defer></script>
+    <script src="https://kit.fontawesome.com/0d6799dc23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="box1_card">
+                <h1 class="city">New Delhi</h1>
+                <span class="country">India</span>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Search for a city" autofocus class="input">
+                <i class="fa-solid fa-magnifying-glass search_icon"></i>
+            </form>
+        </div>
+        <div class="box2">
+            <div class="card1">
+                <div class="card1_box1">
+                    <i class="fa-solid fa-cloud"></i>
+                    <div class="card1_head">
+                        <span>Weather</span>
+                        <span>What's the weather.</span>
+                    </div>
+                </div>
+                <div class="card1_box2">
+                    <div class="card1_box_sm">
+                        <h1 class="temp">Temp</h1>
+                        <span class="overView">Overview</span>
+                    </div>
+                    <img src="" alt="overView icon" class="icon">
+                </div>
+                <div class="card1_box3">
+                    <div class="box3_sm">
+                        <span class="head">Pressure</span>
+                        <span class="pressure">Pressure</span>
+                    </div>
+                    <div class="box3_sm">
+                        <span class="head">Visibility</span>
+                        <span class="visibility">Visibility</span>
+                    </div>
+                    <div class="box3_sm">
+                        <span class="head">Humidity</span>
+                        <span class="humidity">Humidity</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card2_box1">
+                    <span class="head">Sunrise & Sunset</span>
+                    <div class="card2_boxes">
+                        <div class="card2_box1_sm">
+                            <span class="head">🌄</span>
+                            <div>
+                                <span class="md">Sunrise</span>
+                                <span class="head">5:35 AM</span>
+                            </div>
+                        </div>
+                        <div class="card2_box1_sm">
+                            <span class="head">🌉</span>
+                            <div>
+                                <span class="md">Sunset</span>
+                                <span class="head">5:35 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2_box2">
+                    <i class="fa-solid fa-sun-bright"></i>
+                    <div class="card2_box2_sm">
+                        <div>
+                            <h2 class="uv">1 UVI</h2>
+                            <span>Good</span>
+                        </div>
+                        <span class="head">Good risk from UV rays.</span>
+                    </div>
+                </div>
+                <h2 class="time"></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
