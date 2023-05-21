@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 30%;
+}
+.info h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.nameInput , .startBtn{
+    border-radius: 4px;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid black;
+}
+.box{
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.line{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.que{
+    font-size: 1.2rem;
+}
+.nextBtn{
+    padding: 0.3rem 0.8rem;
+    align-self: self-start;
+}
