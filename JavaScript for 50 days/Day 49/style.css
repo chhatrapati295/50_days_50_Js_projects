@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.card{
+    width: 7%;
+    object-fit: cover;
+    height: 100%;
+    margin: auto;
+    transition: all 0.9s ease-in;
+    border-radius: 30px;
+}
+.active{
+    border-radius: 10px;
+    width: 70%;
+}
