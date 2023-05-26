@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: lightseagreen;
+}
+.container{
+    border-radius: 4px;
+    user-select: none;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+}
+.input{
+    outline: none;
+    height: 1.5rem;
+    border: none;
+    display: none;
+}
+.btn{
+    height: 1.5rem;
+}
